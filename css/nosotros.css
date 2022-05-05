@@ -1,0 +1,110 @@
+/*General*/
+
+.sobre-nosotros-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+}
+
+
+/*Historia*/
+
+.nosotros__sobre__historia{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 5rem 0;
+}
+
+
+.nosotros__sobre__historia__texto{
+    text-align: justify;
+    margin:0 5rem;
+}
+
+.nosotros__sobre__historia__imagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotros__sobre__historia__imagen img{
+    width: 80%;
+    height: 35rem;
+}
+
+/*Mision*/
+
+.nosotros__sobre__mision{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.nosotros__sobre__mision__texto{
+    text-align: justify;
+    margin:0 5rem;
+
+}
+
+.nosotros__sobre__mision__imagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotros__sobre__mision__imagen img{
+    width: 80%;
+    height: 35rem;
+}
+
+
+/*vision*/
+
+.nosotros__sobre__vision{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+
+.nosotros__sobre__vision__texto{
+    text-align: justify;
+    margin:0 5rem;
+}
+
+.nosotros__sobre__vision__imagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotros__sobre__vision__imagen img{
+    width: 80%;
+    height: 35rem;
+}
+
+
+/*Mision*/
+
+.nosotros__sobre__valores{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.nosotros__sobre__valores__texto{
+    text-align: justify;
+    margin:0 5rem;
+}
+
+.nosotros__sobre__valores__imagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotros__sobre__valores__imagen img{
+    width: 80%;
+    height: 35rem;
+}

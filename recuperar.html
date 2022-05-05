@@ -6,58 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>recuperar</title>
+
+    <link rel="icon" href="img/logo_transparent.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/recuperar.css">
 </head>
 
 <body>
 
     <!-- Navigation -->
     <header class="header">
-        <div class="header__logo">
-            <a href="index.html">
-                <img src="img/logo_transparent.png" alt="SharkStore" />
-            </a>
+
+        <div class="header__principal">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="img/logo_transparent.jpg" alt="SharkStore" />
+                </a>
+            </div>
+
+            <div class="header__search">
+                <form action="" method="get">
+                    <div class="header__search__flex">
+                        <input type="text" name="Buscar" placeholder="Buscar Productos" />
+                        <button type="button">
+                            <img src="img/searchmagnifierinterfacesymbol1_79893.png" alt="busqueda" />
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="header__icons">
+                <div class="header__icons__img">
+                    <a href="preguntas.html">
+                        <img src="img/questionincircularbutton_80033.png" alt="preguntas" />
+                    </a>
+                </div>
+
+                <div class="header__icons__img">
+                    <a href="favoritos.html">
+                        <img src="img/star-point_icon-icons.com_68483.png" alt="favoritos" />
+                    </a>
+                </div>
+
+                <div class="header__icons__img">
+                    <a href="login.html">
+                        <img src="img/-account-circle_89831.png" alt="usuario" />
+                    </a>
+                </div>
+
+                <div class="header__icons__img">
+                    <a href="carrito.html">
+                        <img src="img/shoppingcart_80945.png" alt="carrito" />
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div class="header__search">
-            <form action="" method="get">
-                <input type="text" name="Buscar" placeholder="Buscar Productos" />
-                <button type="button">
-                    <img src="img/searchmagnifierinterfacesymbol1_79893.png" alt="busqueda" />
-                </button>
-            </form>
-        </div>
-
-        <div class="header__icons">
-            <div class="header__icons__preguntas">
-                <a href="preguntas.html">
-                    <img src="img/questionincircularbutton_80033.png" alt="preguntas" />
-                </a>
-            </div>
-
-            <div class="header__icons__favoritos">
-                <a href="favoritos.html">
-                    <img src="img/star-point_icon-icons.com_68483.png" alt="favoritos" />
-                </a>
-            </div>
-
-            <div class="header__icons__usuario">
-                <a href="login.html">
-                    <img src="img/-account-circle_89831.png" alt="usuario" />
-                </a>
-            </div>
-
-            <div class="header__icons__carrito">
-                <a href="carrito.html">
-                    <img src="img/shoppingcart_80945.png" alt="carrito" />
-                </a>
-            </div>
+        <div class="linea">
         </div>
 
         <nav class="navbar">
             <ul class="navbar__list">
                 <li class="navbar__item">
-                    <img src="img/home_icon-icons.com_73532.png" alt="" class="logo__home" />
-                    <a href="index.html">Inicio</a>
+                    <a href="index.html"> <i class="fas fa-home fa-fw"></i> Inicio</a>
                 </li>
                 <li class="navbar__item">
                     <a href="productos.html">Productos</a>
@@ -75,20 +90,22 @@
         </nav>
     </header>
 
+    <!-- Content -->
     <main class="mainrecuperar">
         <div class="mainrecuperar__contenedor">
             <div class="mainrecuperar__contenedor__titulo">
-                <h1>Recuperar Contraseña</h1>
+                <h2>Recuperar Contraseña</h2>
             </div>
 
             <div class="mainrecuperar__contenedor__formulario">
                 <form action="" method="post">
                     <div class="mainrecuperar__contenedor__formulario__input">
                         <label for="">Correo Electronico</label>
+
                         <input type="email" name="correo" placeholder="Correo Electronico" />
                     </div>
                     <div class="mainrecuperar__contenedor__formulario__input">
-                       <a href="verificacion.html" class="btnRecuperar">Recuperar</a>
+                        <a href="verificacion.html" class="btnRecuperar">Recuperar</a>
                     </div>
                 </form>
             </div>
@@ -96,15 +113,23 @@
         </div>
     </main>
 
-    <!--Footer-->
+    <!--footer-->
     <footer class="foot">
+
         <div class="foot__contenedor">
-            <img src="img/logo_transparent.png" alt="logo Pagina" />
-            <div class="redes sociales">
-                <p>Direccion de la tienda fisica de la pagina web</p>
-                <p>Telefono: 88888888</p>
-                <p>fax 54542121</p>
-                <ul>
+
+            <img src="img/logo_2d.png" alt="logo Pagina" />
+
+            <div class="redesSociales">
+
+                <p><i class="fas fa-map-marked-alt"></i> Direccion de la tienda fisica de la pagina web</p>
+
+                <div class="redesSociales__contacto">
+                    <p><i class="fas fa-phone"></i> Telefono: 88888888</p>
+                    <p><i class="fas fa-fax"></i> fax 54542121</p>
+                </div>
+
+                <ul class="redes">
                     <li>
                         <p>Redes Sociales</p>
                     </li>
@@ -132,29 +157,28 @@
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-google-plus"></i></a>
                     </li>
 
                 </ul>
             </div>
 
-
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.6374663647634!2d-86.2262962852381!3d12.136938991407279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73fe7867ce5fad%3A0x842c4aeae5cf3cda!2sNational%20University%20of%20Engineering!5e0!3m2!1sen!2sni!4v1650135038781!5m2!1sen!2sni"
-                width="100%" height="500px" style="border: 0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
 
         </div>
 
         <div class="enlaces">
-            <a href="#">Nosotros</a>
-            <a href="#">Contacto</a>
-            <a href="#">Ayuda</a>
-            <a href="#">Politicas de privacidad</a>
+            <div class="enlaces__texto">
+                <a href="#">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Politicas de privacidad</a>
+            </div>
             <p>
-                copyright &copy; 2022 - SharkStore - Todos los derechos reservados
+                copyright &copy; 2022 - SharkStore
             </p>
-
         </div>
 
     </footer>

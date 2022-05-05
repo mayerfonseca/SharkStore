@@ -1,0 +1,149 @@
+span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btncarrito {
+    display: inline-block;
+    background-color: #33A0FF;
+    color: white;
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    font-weight: bold;
+}
+
+.btncarrito:hover {
+    cursor: pointer;
+}
+
+
+.carrito__titulo {
+    text-align: center;
+}
+
+.producto__carrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.producto__carrito img {
+    width: 15rem;
+    height: 10rem;
+}
+
+.carrito__tabla {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.carrito__tabla i {
+    color: red;
+}
+
+thead th:nth-child(1) {
+    width: 2%;
+}
+
+thead th:nth-child(2) {
+    width: 20%;
+    text-align: left;
+}
+
+thead th:nth-child(3) {
+    width: 3%;
+}
+
+thead th:nth-child(4) {
+    width: 5%;
+}
+
+thead th:nth-child(5) {
+    width: 5%;
+    text-align: right;
+}
+
+
+th,
+td {
+    padding: 2rem;
+}
+
+td {
+    text-align: center;
+}
+
+tbody td:nth-child(1),
+tbody td:nth-child(5) {
+    width: 2%;
+    text-align: right;
+
+}
+
+.detallescarrito {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.carrito__canjear {
+    margin: 0;
+}
+
+.carrito__canjear__form__input {
+    display: flex;
+}
+
+.carrito__canjear__form__input input {
+    height: 4rem;
+    border: 0.3rem solid #F1F3F4;
+    border-right: none;
+}
+
+.carrito__canjear__form__input button {
+    height: 4rem;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.custom-number-input input:focus {
+    outline: none !important;
+}
+
+.custom-number-input button:focus {
+    outline: none !important;
+}
+
+
+
+/*detalle de la compra*/
+.carrito__total {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    margin-right: 2rem;
+}
+
+.carrito__total__dato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.carrito__total__boton button {
+    width: 100%;
+    height: 4rem;
+}

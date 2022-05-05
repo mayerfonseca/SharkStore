@@ -1,0 +1,94 @@
+/*General*/
+a,p {
+    color: #19A2DD;
+}
+
+.resaltado{
+    font-weight: bold;
+}
+
+.btnlogin {
+    background-color: #e37c06;
+    color: white;
+    border-radius: 0.7rem;
+    width: 15rem;
+    margin: 0 auto;
+    height: 3rem;
+    border: none;
+    font-weight: bold;
+}
+
+/*main login*/
+
+.mainLogin{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/fondologin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainLogin__container{
+    background-color: #F4ECEC;
+    height: 55rem;
+    width: 33rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    box-shadow:  0.45rem 0.4rem 0.3rem #888888 ;
+}
+
+.mainLogin__container__img{
+    width: 100%;
+    height: 10rem;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/fondologin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+}
+
+.mainLogin__container__img img{
+    width: 8rem;
+}
+
+.mainLogin__container__form__input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin: 2rem 0;
+}
+
+.mainLogin__container__form__input input{
+    border: none;
+    height: 3rem;
+    border-radius: 0.5rem;
+}
+
+.mainLogin__container__form__social{
+    display: flex;
+    width: 30%;
+    margin: 0 auto;
+    justify-content: space-around;
+    
+}
+
+
+.mainLogin__container__enlaces{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.foot{
+    margin-top: 0;
+}
+

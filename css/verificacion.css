@@ -1,0 +1,66 @@
+/*General*/
+a,p {
+    color: #19A2DD;
+}
+
+.resaltado{
+    font-weight: bold;
+}
+
+.btnRecuperar{
+    display: block;
+    background-color: #e37c06;
+    text-decoration: none;
+    color: white;
+    width: 20rem;
+    border-radius: 5rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*main verificar*/
+/**/
+
+.recuperacioncontraseña__contenedor__titulo{
+    text-align: center;
+}
+
+.recuperacioncontraseña{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/fondologin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.recuperacioncontraseña__contenedor{
+    background-color: #F4ECEC;
+    height: 30rem;
+    width: 33rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    box-shadow:  0.45rem 0.4rem 0.3rem #888888 ;
+}
+
+.recuperacioncontraseña__contenedor__formulario__input{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.recuperacioncontraseña__contenedor__formulario__input input{
+    border: none;
+    height: 3rem;
+    border-radius: 0.5rem;
+    width: 25.259rem;
+}
+
+
+.foot{
+    margin-top: 0;
+}
