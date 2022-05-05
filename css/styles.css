@@ -54,12 +54,18 @@ img {
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     text-align: center;
-    width: 140rem;
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.header__logo{
+    width: 15rem;
     margin: 0 auto;
 }
 
 .header__logo img {
     width: 15rem;
+    margin: 0 auto;
 }
 
 .header__search__flex {
@@ -77,11 +83,11 @@ img {
 
 .header__icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .header__icons__img img {
-    width: 3.5rem;
+    width: 3.3rem;
 }
 
 .linea {
