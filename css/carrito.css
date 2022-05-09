@@ -147,3 +147,24 @@ input[type='number']::-webkit-outer-spin-button {
     width: 100%;
     height: 4rem;
 }
+
+/*Boton modificado*/
+.botonmodificado{
+    display: flex;
+}
+
+.botonmodificado input{
+    width: 8rem;
+    text-align: center;
+    border-style: none;
+    background-color: #F6F7F8;
+}
+
+.botonmodificado button{
+    border-style: none;
+    background-color: #F6F7F8;
+}
+
+.botonmodificado span{
+    color: #33A0FF;
+}
