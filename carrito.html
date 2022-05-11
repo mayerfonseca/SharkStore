@@ -8,14 +8,14 @@
     <title>Carrito</title>
 
     <link rel="icon" href="img/logo_transparent.png" />
-    
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/carrito.css">
-    
+
 </head>
 
 <body>
@@ -131,15 +131,11 @@
 
                         <td>
                             <div class="botonmodificado">
-                                <button data-action="decrement"
-                                    class="">
+                                <button data-action="decrement" class="">
                                     <span class="">−</span>
                                 </button>
-                                <input type="number"
-                                    class=""
-                                    name="custom-input-number" value="1"></input>
-                                <button data-action="increment"
-                                    class="">
+                                <input type="number" class="" name="custom-input-number" value="1"></input>
+                                <button data-action="increment" class="">
                                     <span class="">+</span>
                                 </button>
                             </div>
@@ -163,15 +159,11 @@
                         <td>$100</td>
                         <td>
                             <div class="botonmodificado">
-                                <button data-action="decrement"
-                                    class="">
+                                <button data-action="decrement" class="">
                                     <span class="">−</span>
                                 </button>
-                                <input type="number"
-                                    class=""
-                                    name="custom-input-number" value="1"></input>
-                                <button data-action="increment"
-                                    class="">
+                                <input type="number" class="" name="custom-input-number" value="1"></input>
+                                <button data-action="increment" class="">
                                     <span class="">+</span>
                                 </button>
                             </div>
@@ -196,15 +188,11 @@
 
                         <td>
                             <div class="botonmodificado">
-                                <button data-action="decrement"
-                                    class="">
+                                <button data-action="decrement" class="">
                                     <span class="">−</span>
                                 </button>
-                                <input type="number"
-                                    class=""
-                                    name="custom-input-number" value="1"></input>
-                                <button data-action="increment"
-                                    class="">
+                                <input type="number" class="" name="custom-input-number" value="1"></input>
+                                <button data-action="increment" class="">
                                     <span class="">+</span>
                                 </button>
                             </div>
@@ -256,12 +244,25 @@
                     </div>
 
                     <div class="carrito__total__boton">
-                        <button type="button" class="btncarrito">
+                        <button type="button" class="btncarrito" id="open">
                             Comprar
                         </button>
                     </div>
                 </div>
             </div>
+
+            <div id="modal_container" class="modal-container">
+                <div class="modal">
+                    <h1>Ventana Modal</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque assumenda dignissimos illo
+                        explicabo natus quia repellat, praesentium voluptatibus harum ipsam dolorem cumque labore sunt
+                        dicta consectetur, nesciunt maiores delectus maxime?
+                    </p>
+                    <button id="close">Cerrar</button>
+                </div>
+            </div>
+
 
 
         </div>
@@ -376,6 +377,31 @@
 
         incrementButtons.forEach(btn => {
             btn.addEventListener("click", increment);
+        });
+
+
+        const openEls = document.querySelectorAll("[data-open]");
+        const isVisible = "is-visible";
+
+        for (const el of openEls) {
+            el.addEventListener("click", function () {
+                const modalId = this.dataset.open;
+                document.getElementById(modalId).classList.add(isVisible);
+            });
+        }
+
+
+
+        const open = document.getElementById('open');
+        const modal_container = document.getElementById('modal_container');
+        const close = document.getElementById('close');
+
+        open.addEventListener('click', () => {
+            modal_container.classList.add('show');
+        });
+
+        close.addEventListener('click', () => {
+            modal_container.classList.remove('show');
         });
     </script>
 

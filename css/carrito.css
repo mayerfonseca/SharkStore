@@ -1,170 +1,206 @@
-span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .btncarrito {
-    display: inline-block;
-    background-color: #33A0FF;
-    color: white;
-    width: 8rem;
-    height: 3rem;
-    border: none;
-    font-weight: bold;
+	display: inline-block;
+	background-color: #33a0ff;
+	color: white;
+	width: 8rem;
+	height: 3rem;
+	border: none;
+	font-weight: bold;
 }
 
 .btncarrito:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
-
 .carrito__titulo {
-    text-align: center;
+	text-align: center;
 }
 
 .producto__carrito {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
 }
 
 .producto__carrito img {
-    width: 15rem;
-    height: 10rem;
+	width: 15rem;
+	height: 10rem;
 }
 
 .carrito__tabla {
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
 }
 
 .carrito__tabla i {
-    color: red;
+	color: red;
 }
 
 thead th:nth-child(1) {
-    width: 2%;
+	width: 2%;
 }
 
 thead th:nth-child(2) {
-    width: 20%;
-    text-align: left;
+	width: 20%;
+	text-align: left;
 }
 
 thead th:nth-child(3) {
-    width: 3%;
+	width: 3%;
 }
 
 thead th:nth-child(4) {
-    width: 5%;
+	width: 5%;
 }
 
 thead th:nth-child(5) {
-    width: 5%;
-    text-align: right;
+	width: 5%;
+	text-align: right;
 }
-
 
 th,
 td {
-    padding: 2rem;
+	padding: 2rem;
 }
 
 td {
-    text-align: center;
+	text-align: center;
 }
 
 tbody td:nth-child(1),
 tbody td:nth-child(5) {
-    width: 2%;
-    text-align: right;
-
+	width: 2%;
+	text-align: right;
 }
 
 .detallescarrito {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .carrito__canjear {
-    margin: 0;
+	margin: 0;
 }
 
 .carrito__canjear__form__input {
-    display: flex;
+	display: flex;
 }
 
 .carrito__canjear__form__input input {
-    height: 4rem;
-    border: 0.3rem solid #F1F3F4;
-    border-right: none;
+	height: 4rem;
+	border: 0.3rem solid #f1f3f4;
+	border-right: none;
 }
 
 .carrito__canjear__form__input button {
-    height: 4rem;
+	height: 4rem;
 }
 
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 .custom-number-input input:focus {
-    outline: none !important;
+	outline: none !important;
 }
 
 .custom-number-input button:focus {
-    outline: none !important;
+	outline: none !important;
 }
-
-
 
 /*detalle de la compra*/
 .carrito__total {
-    display: flex;
-    flex-direction: column;
-    width: 30rem;
-    margin-right: 2rem;
+	display: flex;
+	flex-direction: column;
+	width: 30rem;
+	margin-right: 2rem;
 }
 
 .carrito__total__dato {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .total {
-    font-weight: bold;
-    font-size: 3rem;
+	font-weight: bold;
+	font-size: 3rem;
 }
 
 .carrito__total__boton button {
-    width: 100%;
-    height: 4rem;
+	width: 100%;
+	height: 4rem;
 }
 
 /*Boton modificado*/
-.botonmodificado{
-    display: flex;
+.botonmodificado {
+	display: flex;
 }
 
-.botonmodificado input{
-    width: 8rem;
-    text-align: center;
-    border-style: none;
-    background-color: #F6F7F8;
+.botonmodificado input {
+	width: 8rem;
+	text-align: center;
+	border-style: none;
+	background-color: #f6f7f8;
 }
 
-.botonmodificado button{
-    border-style: none;
-    background-color: #F6F7F8;
+.botonmodificado button {
+	border-style: none;
+	background-color: #f6f7f8;
 }
 
-.botonmodificado span{
-    color: #33A0FF;
+.botonmodificado span {
+	color: #33a0ff;
+}
+
+/*Modal compra*/
+
+.modal-container {
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.3);
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	pointer-events: none;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	transition: opacity 0.3s ease;
+}
+
+.show {
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.modal {
+	background-color: #fff;
+	width: 600px;
+	max-width: 100%;
+	padding: 30px 50px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+.modal h1 {
+	margin: 0;
+}
+
+.modal p {
+	opacity: 0.7;
+	font-size: 14px;
 }
