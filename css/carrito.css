@@ -188,19 +188,154 @@ input[type='number']::-webkit-outer-spin-button {
 
 .modal {
 	background-color: #fff;
-	width: 600px;
+	width: 70rem;
 	max-width: 100%;
-	padding: 30px 50px;
-	border-radius: 5px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-	text-align: center;
+	height: 60rem;
+	padding: 3rem 5rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+	
+}
+
+.modal__datos{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3rem;
+}
+
+.modal__inputs{
+	width: 100%;
+	border-style: none;
+	background-color: #DFDEDE;
+	color:  #000;
+}
+
+input.modal__inputs{
+	height: 4rem;
+	margin: 1rem 0;
+	width: 100%;
+}
+
+textarea.modal__inputs{
+	margin-top: 1rem;
+	height: 12rem;
+	resize: none;
 }
 
 .modal h1 {
 	margin: 0;
+	color: #40BFFF;
+	text-align: center;
 }
 
 .modal p {
 	opacity: 0.7;
 	font-size: 14px;
+}
+
+.modal img{
+	margin: 0 auto;
+}
+
+.modal__sig{
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+.modal__sig button{
+	width: 20rem;
+	text-align: center;
+}
+
+.metodopago{
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 5fr 1fr;
+}
+
+.metodopago i{
+	color: #40BFFF;
+}
+
+.seleccion{
+	display: flex;
+	justify-content: end;
+}
+
+.modal__datos h3{
+	margin: 0 auto;
+	color: #40BFFF;
+	text-align: center;
+}
+
+input[type='radio']:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #d1d3d1;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #33a0ff;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+.btncierre button{
+	border-style: none;
+	background-color: #fff;
+}
+
+.btncierre i{
+	color: #33a0ff;
+}
+
+.btncierre i:hover{
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.datostarjeta{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.5rem;
+}
+
+.modal h3{
+	text-align: center;
+}
+
+.botonesmetodo{
+	display: flex;
+	justify-content: space-between;
+}
+
+.btnatras button{
+	border-style: none;
+	background-color: #fff;
+}
+
+.btnatras i{
+	color: #33a0ff;
+}
+
+.btnatras i:hover{
+	transform: scale(1.2);
+	cursor: pointer;
 }

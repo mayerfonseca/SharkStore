@@ -251,15 +251,135 @@
                 </div>
             </div>
 
+            <!---modales-->
             <div id="modal_container" class="modal-container">
                 <div class="modal">
-                    <h1>Ventana Modal</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque assumenda dignissimos illo
-                        explicabo natus quia repellat, praesentium voluptatibus harum ipsam dolorem cumque labore sunt
-                        dicta consectetur, nesciunt maiores delectus maxime?
-                    </p>
-                    <button id="close">Cerrar</button>
+
+                    <div class="btncierre">
+                        <button class="" id="close" type="button"> <i class="fas fa-times"></i></button>
+                    </div>
+
+                    <h1>Metodo De Pago</h1>
+                    <img src="img/Stepper1.png" alt="">
+
+                    <form action="">
+                        <div class="modal__datos">
+                            <div class="">
+                                <input class="modal__inputs" type="text" name="" id="" placeholder="Nombres" required>
+                                <input class="modal__inputs" type="text" name="" id="" placeholder="Correo electronico"
+                                    required>
+
+                                <h3>Selecciona Metodo De Pago</h3>
+
+                                <label for="tarjeta" class="metodopago">
+                                    <i class="fa fa-credit-card"></i> Tarjeta de credito o debito
+                                    <div class="seleccion">
+                                        <input type="radio" name="pago" id="tarjeta" required>
+                                    </div>
+                                </label>
+
+                                <label for="paypal" class="metodopago">
+                                    <i class="fab fa-cc-paypal"></i> Paypal
+                                    <div class="seleccion">
+                                        <input type="radio" name="pago" id="tarjeta" required>
+                                    </div>
+                                </label>
+
+
+                                <label for="transferencia" class="metodopago">
+                                    <i class="fas fa-university"></i> Transferencia bancaria
+                                    <div class="seleccion">
+                                        <input type="radio" name="pago" id="tarjeta" required>
+                                    </div>
+                                </label>
+
+                            </div>
+
+                            <div class="">
+                                <input class="modal__inputs" type="text" name="" id="" placeholder="Apellidos" required>
+
+                                <textarea class="modal__inputs" name="" id="" placeholder="Direccion de envio"
+                                    required></textarea>
+
+                                <input class="modal__inputs" type="text" name="" id="" placeholder="Telefono" required>
+                            </div>
+                        </div>
+
+                        <div class="modal__sig">
+                            <button id="open_metodo" class="btncarrito" type="button">Ir al Pago
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="modal_container_metodo" class="modal-container">
+                <div class="modal">
+
+                    <div class="botonesmetodo">
+
+                        <div class="btnatras">
+                            <button id="atras_inicio" type="button">
+                                <i class="fa fa-arrow-left"></i>
+                            </button>
+                        </div>
+
+                        <div class="btncierre">
+                            <button class="" id="close_metodo" type="button"> <i class="fas fa-times"></i></button>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <h1>Metodo De Pago</h1>
+                    <img src="img/Stepper2.png" alt="">
+
+                    <form action="">
+                        <div class="modal__datos">
+
+                            <div>
+                                <img src="img/CreditCard.png" alt="">
+                            </div>
+
+                            <div>
+                                <input type="text" name="" id="" class="modal__inputs" placeholder="Numero de tarjeta">
+                                <div class="datostarjeta">
+                                    <input type="text" name="" id="" class="modal__inputs" placeholder="Vencimiento">
+                                    <input type="text" name="" id="" class="modal__inputs" placeholder="CVV">
+                                </div>
+                                <input type="text" name="" id="" class="modal__inputs" placeholder="Numero del titular">
+
+                                <label for="recordar">
+                                    <input type="checkbox" name="" id="recordar">
+                                    Guardar esta tarjeta
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="modal__sig">
+                            <button id="open_fin" class="btncarrito" type="button">Confirmar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="modal_container_fin" class="modal-container">
+                <div class="modal">
+                    <br>
+                    <h1>Compra Finalizada</h1>
+                    <img src="img/Stepper3.png" alt="">
+
+                    <img src="img/successicon.png" alt="">
+
+                    <h3>Éxito</h3>
+
+                    <div class="modal__sig">
+                        <button id="close_fin" class="btncarrito" type="button">Completado
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -380,29 +500,73 @@
         });
 
 
-        const openEls = document.querySelectorAll("[data-open]");
-        const isVisible = "is-visible";
 
-        for (const el of openEls) {
-            el.addEventListener("click", function () {
-                const modalId = this.dataset.open;
-                document.getElementById(modalId).classList.add(isVisible);
-            });
-        }
-
-
+        /*Modal*/
 
         const open = document.getElementById('open');
         const modal_container = document.getElementById('modal_container');
         const close = document.getElementById('close');
 
+        const modal_container_metodo = document.getElementById('modal_container_metodo');
+        const open_metodo = document.getElementById('open_metodo');
+        const close_metodo = document.getElementById('close_metodo');
+        const atras_inicio = document.getElementById('atras_inicio');
+
+        const modal_container_fin = document.getElementById('modal_container_fin');
+        const open_fin = document.getElementById('open_fin');
+        const close_fin = document.getElementById('close_fin');
+
         open.addEventListener('click', () => {
             modal_container.classList.add('show');
+            disableScrolling();
+        });
+
+        open_metodo.addEventListener('click', () => {
+            modal_container.classList.remove('show');
+            modal_container_metodo.classList.add('show');
+            disableScrolling();
+        });
+
+        open_fin.addEventListener('click', () => {
+            modal_container_metodo.classList.remove('show');
+            modal_container_fin.classList.add('show');
+            disableScrolling();
+        });
+
+        atras_inicio.addEventListener('click', () => {
+            modal_container_metodo.classList.remove('show');
+            modal_container.classList.add('show');
+            disableScrolling();
         });
 
         close.addEventListener('click', () => {
             modal_container.classList.remove('show');
+            enableScrolling();
         });
+
+        close_metodo.addEventListener('click', () => {
+            modal_container_metodo.classList.remove('show');
+            enableScrolling();
+        });
+
+        close_fin.addEventListener('click', () => {
+            modal_container_fin.classList.remove('show');
+            enableScrolling();
+        });
+
+
+        function disableScrolling() {
+            var x = window.scrollX;
+            var y = window.scrollY;
+            window.onscroll = function () { window.scrollTo(x, y); };
+        }
+
+        function enableScrolling() {
+            window.onscroll = function () { };
+        }
+
+
+
     </script>
 
 </body>
