@@ -1,0 +1,28 @@
+.gridproductos{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 5rem;
+}
+
+.productos img{
+    width: 100%;
+    height: 100%;
+}
+
+.productos__info img{
+    width: 8rem;
+    height: 3rem;
+}
+
+.productos__info p{
+    text-align: justify;
+}
+
+datalist{
+    display: flex;
+}
