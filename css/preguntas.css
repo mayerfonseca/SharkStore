@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+}
+
+div.cuerpo{
+    min-height: 5rem;
+}
+
+div.subapartado{
+    min-height: 5rem;
+    -webkit-transition: height 0.2s;
+}
+
+div.titulo{
+    height: 5rem;
+    background-color:  #33A0FF;
+    overflow: hidden;
+    border-bottom: #9ebd9e 0.1rem solid;
+}
+
+p.titulo{
+    margin: 1.3rem;
+    color: white;
+}
+
+div.info{
+    height: 0rem;
+    overflow: hidden;
+    -webkit-transition: height 0.2s;
+}
+
+p.info{
+    margin: 2rem;
+    text-align: justify;
+}
+
+div.subapartado:hover div.info{
+    height: 10rem;
+}
