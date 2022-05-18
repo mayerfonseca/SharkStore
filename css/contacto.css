@@ -19,16 +19,23 @@
 }
 
 
+
 .formulario{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
     margin: 0 20rem;
     gap: 2rem;
 
 }
 
-.contacto__form input{
-  width: 70.28rem;
+.contacto__form{
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  justify-content: space-between;
+}
+
+.contacto__form button{
+    grid-column-start: 3;
+    grid-column-end: 3;
 }
