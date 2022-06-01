@@ -95,36 +95,47 @@
             <div class="mainRegistro__container__form">
                 <h2 class="mainRegistro__container__form__title">Registro</h2>
                 <form action="" method="post">
-                    <div class="mainRegistro__container__form__input">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    <div class="gridinputs">
+                        <div class="mainRegistro__container__form__input">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                        </div>
+
+                        <div class="mainRegistro__container__form__input">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                        </div>
                     </div>
-                    <div class="mainRegistro__container__form__input">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+
+                    <div class="gridinputs">
+                        <div class="mainRegistro__container__form__input">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+
+                        <div class="mainRegistro__container__form__input">
+                            <label for="telefono">Telefono</label>
+                            <input type="text" name="telefono" id="telefono" placeholder="Telefono" required>
+                        </div>
                     </div>
-                    <div class="mainRegistro__container__form__input">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email" required>
+
+                    <div class="gridinputs">
+                        <div class="mainRegistro__container__form__input">
+                            <label for="password">Contraseña</label>
+                            <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                        </div>
+                        <div class="mainRegistro__container__form__input">
+                            <label for="password2">Repetir Contraseña</label>
+                            <input type="password" name="password2" id="password2" placeholder="Repetir Contraseña"
+                                required>
+                        </div>
                     </div>
-                    <div class="mainRegistro__container__form__input">
-                        <label for="password">Contraseña</label>
-                        <input type="password" name="password" id="password" placeholder="Contraseña" required>
-                    </div>
-                    <div class="mainRegistro__container__form__input">
-                        <label for="password2">Repetir Contraseña</label>
-                        <input type="password" name="password2" id="password2" placeholder="Repetir Contraseña"
-                            required>
-                    </div>
-                    <div class="mainRegistro__container__form__input">
-                        <label for="telefono">Telefono</label>
-                        <input type="text" name="telefono" id="telefono" placeholder="Telefono" required>
-                    </div>
+
                     <div class="mainRegistro__container__form__input">
                         <label for="direccion">Direccion</label>
                         <input type="text" name="direccion" id="direccion" placeholder="Direccion" required>
                     </div>
-                    
+
                     <div class="mainRegistro__container__form__input__btn">
                         <button class="btnlogin" type="submit" name="registrarse">Registrarse</button>
                     </div>
@@ -134,8 +145,8 @@
     </main>
 
 
-     <!--footer-->
-     <footer class="foot">
+    <!--footer-->
+    <footer class="foot">
 
         <div class="foot__contenedor">
 

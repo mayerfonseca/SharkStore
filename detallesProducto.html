@@ -6,57 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles del Producto</title>
+
+    <link rel="icon" href="img/logo_transparent.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/detallesproducto.css">
 </head>
 
 <body>
     <!-- Navigation -->
     <header class="header">
-        <div class="header__logo">
-            <a href="index.html">
-                <img src="img/logo_transparent.png" alt="SharkStore" />
-            </a>
+
+        <div class="header__principal">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="img/logo_transparent.jpg" alt="SharkStore" />
+                </a>
+            </div>
+
+            <div class="header__search">
+                <form action="" method="get">
+                    <div class="header__search__flex">
+                        <input type="text" name="Buscar" placeholder="Buscar Productos" />
+                        <button type="button">
+                            <img src="img/searchmagnifierinterfacesymbol1_79893.png" alt="busqueda" />
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="header__icons">
+                <div class="header__icons__img">
+                    <a href="preguntas.html">
+                        <img src="img/questionincircularbutton_80033.png" alt="preguntas" />
+                    </a>
+                </div>
+
+                <div class="header__icons__img">
+                    <a href="favoritos.html">
+                        <img src="img/star-point_icon-icons.com_68483.png" alt="favoritos" />
+                    </a>
+                </div>
+
+                <div class="header__icons__img">
+                    <a href="login.html">
+                        <img src="img/-account-circle_89831.png" alt="usuario" />
+                    </a>
+                </div>
+
+                <div class="header__icons__img">
+                    <a href="carrito.html">
+                        <img src="img/shoppingcart_80945.png" alt="carrito" />
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div class="header__search">
-            <form action="" method="get">
-                <input type="text" name="Buscar" placeholder="Buscar Productos" />
-                <button type="button">
-                    <img src="img/searchmagnifierinterfacesymbol1_79893.png" alt="busqueda" />
-                </button>
-            </form>
-        </div>
-
-        <div class="header__icons">
-            <div class="header__icons__preguntas">
-                <a href="preguntas.html">
-                    <img src="img/questionincircularbutton_80033.png" alt="preguntas" />
-                </a>
-            </div>
-
-            <div class="header__icons__favoritos">
-                <a href="favoritos.html">
-                    <img src="img/star-point_icon-icons.com_68483.png" alt="favoritos" />
-                </a>
-            </div>
-
-            <div class="header__icons__usuario">
-                <a href="login.html">
-                    <img src="img/-account-circle_89831.png" alt="usuario" />
-                </a>
-            </div>
-
-            <div class="header__icons__carrito">
-                <a href="carrito.html">
-                    <img src="img/shoppingcart_80945.png" alt="carrito" />
-                </a>
-            </div>
+        <div class="linea">
         </div>
 
         <nav class="navbar">
             <ul class="navbar__list">
                 <li class="navbar__item">
-                    <img src="img/home_icon-icons.com_73532.png" alt="" class="logo__home" />
-                    <a href="index.html">Inicio</a>
+                    <a href="index.html"> <i class="fas fa-home fa-fw"></i> Inicio</a>
                 </li>
                 <li class="navbar__item">
                     <a href="productos.html">Productos</a>
@@ -80,13 +95,20 @@
         <div class="detallesproducto">
             <div class="detallesproducto__img">
                 <img src="img/Botines para surf.jpg" alt="producto1" />
+
+                <div class="listadoimagenes">
+                    <img src="img/Botines para surf.jpg" alt="producto1" />
+                    <img src="img/Botines para surf.jpg" alt="producto1" />
+                    <img src="img/Botines para surf.jpg" class="imagenseleccionada" alt="producto1" />
+                    <img src="img/Botines para surf.jpg" alt="producto1" />
+                </div>
             </div>
 
             <div class="detallesproducto__info">
                 <h2>Producto 1</h2>
 
                 <div>
-                    <p>
+                    <p class="price">
                         <span>Precio:</span> $100
                     </p>
 
@@ -97,16 +119,16 @@
                     <p>
                         <span>Categoría:</span> Accesorios
                     </p>
-                   
-                    <p>
-                       En existencia
+
+                    <p class="instock">
+                        En existencia
                     </p>
 
                     <form action="">
-                        <button type="submit">Agregar al carrito</button>
+                        <button class="button" type="submit">Agregar al carrito</button>
                     </form>
 
-                    <p>
+                    <p class="envio">
                         Envio desde $50
                     </p>
 
@@ -114,206 +136,202 @@
             </div>
         </div>
 
-        <div class="informacionAdicional">
-            <h2>Información Adicional</h2>
-
-            <div class="informacionAdicional__descripcion">
-                <h3>Descripción</h3>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quidem.
-                </p>
-            </div>
-
-            <div class="informacionAdicional__caracteristicas">
-                <h3>Características</h3>
-
-                <ul>
-                    <li>
-                        <span>Talla:</span> S, M, L, XL
-                    </li>
-                    <li>
-                        <span>Color:</span> Rojo, Azul, Verde
-                    </li>
-                    <li>
-                        <span>Material:</span> Algodón, Cuero
-                    </li>
-                    <li>
-                        <span>Marca:</span> Adidas, Puma
-                    </li>
-                </ul>
-            </div>
+        <div class="menu">
+            <p class="subrayado" data-target="#infoadcional">Informacion Adicional</p>
+            <p data-target="#resenas">Reseñas</p>
         </div>
 
-
-        <div class="reseñas">
-            <h2>Reseñas</h2>
-            <div class="reseñas__item">
-                <div class="reseñas__item__img">
-                    <img src="img/user_icon-icons.com_73532.png" alt="usuario" />
+        <div class="content">
+            <div data-content id="infoadcional" class="active">
+                <div class="textoinformacion">
+                    <p>Datos Producto:</p>
+                    <p>Descripcion Dato</p>
                 </div>
 
-                <div class="reseñas__item__info">
-                    <p>
-                        <span>Usuario:</span>
-                        <span>Nombre</span>
-                    </p>
+                <div class="textoinformacion">
+                    <p>Disponibilidad:</p>
+                    <p>Plazo de fabricación: 7-8 meses</p>
+                </div>
 
-                    <p>
-                        <span>Fecha:</span>
-                        <span>10/10/2019</span>
-                    </p>
+                <div class="textoinformacion">
+                    <p>Tipo:</p>
+                    <p>Fish</p>
+                </div>
 
-                    <p>
-                        <span>Reseña:</span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam, quidem.
+                <div class="textoinformacion">
+                    <p>Rango de volumen:</p>
+                    <p>Menos de 28 litros, Entre 28 y 32 litros, Entre 32 y 36 litros
                     </p>
                 </div>
             </div>
 
-            <div class="reseñas__item">
-                <div class="reseñas__item__img">
-                    <img src="img/user_icon-icons.com_73532.png" alt="usuario" />
+            <div data-content id="resenas">
+                <div class="textoresena">
+                    <div class="usuario">
+                        <i class="fa fa-user"></i>
+                        <p>Usuario</p>
+                    </div>
+                    <img src="img/star-point_icon-icons.com_68483.png" alt="">
+
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam laboriosam sint autem quaerat error illum vel, maiores consequatur fugiat. Quasi officia harum et nemo ducimus! Animi laboriosam voluptas eligendi omnis!
+                    </p>
                 </div>
 
-                <div class="reseñas__item__info">
-                    <p>
-                        <span>Usuario:</span>
-                        <span>Nombre</span>
-                    </p>
+                <div class="textoresena">
+                    <div class="usuario">
+                        <i class="fa fa-user"></i>
+                        <p>Usuario</p>
+                    </div>
+                    <img src="img/star-point_icon-icons.com_68483.png" alt="">
 
                     <p>
-                        <span>Fecha:</span>
-                        <span>10/10/2019</span>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam laboriosam sint autem quaerat error illum vel, maiores consequatur fugiat. Quasi officia harum et nemo ducimus! Animi laboriosam voluptas eligendi omnis!
                     </p>
+                </div>
+
+                <div class="textoresena">
+                    <div class="usuario">
+                        <i class="fa fa-user"></i>
+                        <p>Usuario</p>
+                    </div>
+                    <img src="img/star-point_icon-icons.com_68483.png" alt="">
 
                     <p>
-                        <span>Reseña:</span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam, quidem.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam laboriosam sint autem quaerat error illum vel, maiores consequatur fugiat. Quasi officia harum et nemo ducimus! Animi laboriosam voluptas eligendi omnis!
                     </p>
                 </div>
             </div>
+
         </div>
+
 
         <div class="contenedor">
             <!--productos relacionados-->
             <div class="productosrelacionados">
                 <h2>Productos Relacionados</h2>
 
-                <div class="productosrelacionados__item">
-                    <div class="productosrelacionados__item__img">
-                        <img src="img/Botines para surf.jpg" alt="producto1" />
+                <div class="productos">
+                    <div class="productosrelacionados__item">
+                        <div class="productosrelacionados__item__img">
+                            <img src="img/Botines para surf.jpg" alt="producto1" />
+                        </div>
+
+                        <div class="productosrelacionados__item__info">
+                            <h3>Producto 1</h3>
+
+                            <form action="">
+                                <button class="button" type="submit">Agregar al carrito</button>
+                            </form>
+
+                        </div>
                     </div>
 
-                    <div class="productosrelacionados__item__info">
-                        <h3>Producto 1</h3>
+                    <div class="productosrelacionados__item">
+                        <div class="productosrelacionados__item__img">
+                            <img src="img/Botines para surf.jpg" alt="producto1" />
+                        </div>
 
-                        <form action="">
-                            <button type="submit">Agregar al carrito</button>
-                        </form>
+                        <div class="productosrelacionados__item__info">
+                            <h3>Producto 1</h3>
 
+                            <form action="">
+                                <button class="button" type="submit">Agregar al carrito</button>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="productosrelacionados__item">
+                        <div class="productosrelacionados__item__img">
+                            <img src="img/Botines para surf.jpg" alt="producto1" />
+                        </div>
+
+                        <div class="productosrelacionados__item__info">
+                            <h3>Producto 1</h3>
+
+                            <form action="">
+                                <button class="button" type="submit">Agregar al carrito</button>
+                            </form>
+
+                        </div>
                     </div>
                 </div>
-                
-                <div class="productosrelacionados__item">
-                    <div class="productosrelacionados__item__img">
-                        <img src="img/Botines para surf.jpg" alt="producto1" />
-                    </div>
+            </div>
 
-                    <div class="productosrelacionados__item__info">
-                        <h3>Producto 1</h3>
-
-                        <form action="">
-                            <button type="submit">Agregar al carrito</button>
-                        </form>
-
-                    </div>
-                </div>         
-
-                <div class="productosrelacionados__item">
-                    <div class="productosrelacionados__item__img">
-                        <img src="img/Botines para surf.jpg" alt="producto1" />
-                    </div>
-
-                    <div class="productosrelacionados__item__info">
-                        <h3>Producto 1</h3>
-
-                        <form action="">
-                            <button type="submit">Agregar al carrito</button>
-                        </form>
-
-                    </div>
-                </div>         
-        </div>
-
-        <div class="contenedor">
             <!--productos que te pueden interesar-->
-            <div class="productosinteres">
+            <div class="productosrelacionados">
                 <h2>Productos que te pueden interesar</h2>
 
-                <div class="productosinteres__item">
-                    <div class="productosinteres__item__img">
-                        <img src="img/Botines para surf.jpg" alt="producto1" />
+                <div class="productos">
+                    <div class="productosrelacionados__item">
+                        <div class="productosrelacionados__item__img">
+                            <img src="img/Botines para surf.jpg" alt="producto1" />
+                        </div>
+
+                        <div class="productosrelacionados__item__info">
+                            <h3>Producto 1</h3>
+
+                            <form action="">
+                                <button class="button" type="submit">Agregar al carrito</button>
+                            </form>
+
+                        </div>
                     </div>
 
-                    <div class="productosinteres__item__info">
-                        <h3>Producto 1</h3>
+                    <div class="productosrelacionados__item">
+                        <div class="productosrelacionados__item__img">
+                            <img src="img/Botines para surf.jpg" alt="producto1" />
+                        </div>
 
-                        <form action="">
-                            <button type="submit">Agregar al carrito</button>
-                        </form>
+                        <div class="productosrelacionados__item__info">
+                            <h3>Producto 1</h3>
 
-                    </div>
-                </div>
+                            <form action="">
+                                <button class="button" type="submit">Agregar al carrito</button>
+                            </form>
 
-
-                <div class="productosinteres__item">
-                    <div class="productosinteres__item__img">
-                        <img src="img/Botines para surf.jpg" alt="producto1" />
-                    </div>
-
-                    <div class="productosinteres__item__info">
-                        <h3>Producto 1</h3>
-
-                        <form action="">
-                            <button type="submit">Agregar al carrito</button>
-                        </form>
-
-                    </div>
-                </div>
-
-
-                <div class="productosinteres__item">
-                    <div class="productosinteres__item__img">
-                        <img src="img/Botines para surf.jpg" alt="producto1" />
+                        </div>
                     </div>
 
-                    <div class="productosinteres__item__info">
-                        <h3>Producto 1</h3>
+                    <div class="productosrelacionados__item">
+                        <div class="productosrelacionados__item__img">
+                            <img src="img/Botines para surf.jpg" alt="producto1" />
+                        </div>
 
-                        <form action="">
-                            <button type="submit">Agregar al carrito</button>
-                        </form>
+                        <div class="productosrelacionados__item__info">
+                            <h3>Producto 1</h3>
 
+                            <form action="">
+                                <button class="button" type="submit">Agregar al carrito</button>
+                            </form>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+
     </main>
 
     <!--footer-->
     <footer class="foot">
+
         <div class="foot__contenedor">
-            <img src="img/logo_transparent.png" alt="logo Pagina" />
-            <div class="redes sociales">
-                <p>Direccion de la tienda fisica de la pagina web</p>
-                <p>Telefono: 88888888</p>
-                <p>fax 54542121</p>
-                <ul>
+
+            <img src="img/logo_2d.png" alt="logo Pagina" />
+
+            <div class="redesSociales">
+
+                <p><i class="fas fa-map-marked-alt"></i> Direccion de la tienda fisica de la pagina web</p>
+
+                <div class="redesSociales__contacto">
+                    <p><i class="fas fa-phone"></i> Telefono: 88888888</p>
+                    <p><i class="fas fa-fax"></i> fax 54542121</p>
+                </div>
+
+                <ul class="redes">
                     <li>
                         <p>Redes Sociales</p>
                     </li>
@@ -341,32 +359,54 @@
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-google-plus"></i></a>
                     </li>
 
                 </ul>
             </div>
 
-
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.6374663647634!2d-86.2262962852381!3d12.136938991407279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73fe7867ce5fad%3A0x842c4aeae5cf3cda!2sNational%20University%20of%20Engineering!5e0!3m2!1sen!2sni!4v1650135038781!5m2!1sen!2sni"
-                width="100%" height="500px" style="border: 0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
 
         </div>
 
         <div class="enlaces">
-            <a href="#">Nosotros</a>
-            <a href="#">Contacto</a>
-            <a href="#">Ayuda</a>
-            <a href="#">Politicas de privacidad</a>
+            <div class="enlaces__texto">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="ayuda.html">Ayuda</a>
+                <a href="politicas.html">Politicas de privacidad</a>
+            </div>
             <p>
-                copyright &copy; 2022 - SharkStore - Todos los derechos reservados
+                copyright &copy; 2022 - SharkStore
             </p>
-
         </div>
 
     </footer>
+
+    <script>
+        const targets = document.querySelectorAll('[data-target]')
+        const content = document.querySelectorAll('[data-content]')
+
+        targets.forEach(target => {
+            target.addEventListener('click', () => {
+                content.forEach(c => {
+                    c.classList.remove('active')
+                })
+                const t = document.querySelector(target.dataset.target)
+                t.classList.add('active')
+
+                if(t.id=='infoadcional'){
+                    targets[0].classList.add('subrayado')
+                    targets[1].classList.remove('subrayado')
+                }else{
+                    targets[0].classList.remove('subrayado')
+                    targets[1].classList.add('subrayado')
+                }
+            })
+        })
+    </script>
 
 </body>
 

@@ -1,0 +1,155 @@
+.detallesproducto{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.detallesproducto__img{
+    display: flex;
+    flex-direction: column;
+}
+
+.detallesproducto__img img{
+    width: 40rem;
+    margin: 0 auto;
+}
+
+.listadoimagenes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.listadoimagenes img{
+    width: 8rem;
+}
+
+.listadoimagenes img:hover{
+    cursor: pointer;
+}
+
+.imagenseleccionada{
+    border: 0.2rem solid black;
+}
+
+.detallesproducto__info{
+   margin: auto auto;
+}
+
+.detallesproducto p{
+    font-size: 2rem;
+}
+
+.price{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #E58327;
+}
+
+.instock{
+    font-size: 1.5rem;
+    color: #39EC1C;
+}
+
+.button{
+    background-color: #E58327;
+    color: white;
+    width: 20rem;
+    margin: 0 auto;
+    height: 3rem;
+    font-weight: bold;
+    border-style: none;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.envio{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*tab panel*/
+
+.menu {
+	display: flex;
+}
+
+.menu p {
+	margin-right: 2rem;
+	cursor: pointer;
+}
+
+.content {
+	margin-top: 2rem;
+    border: 0.1rem solid black;
+    margin-bottom: 5rem;
+}
+
+[data-content] {
+	display: none;
+}
+
+.active[data-content] {
+	display: block;
+}
+
+.textoinformacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 2rem;
+}
+
+.textoresena{
+    margin: 0 2rem;
+}
+
+.usuario{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.textoresena img{
+    width: 2rem;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+/*productos relacionados*/
+
+.productosrelacionados{
+    margin-bottom: 10rem;
+}
+
+.productosrelacionados h2{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 0.2rem solid black;
+}
+
+.productos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.productosrelacionados__item{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.productosrelacionados__item__img img{
+    width: 15rem;
+    margin: 0 auto;
+}
+
+.productosrelacionados__item__info h3{
+    text-align: center;
+}
+
+.detallesproducto__info button{
+    margin: 0 auto;
+}
